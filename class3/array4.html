@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        mainArray = [];
+
+        function addToArray(){
+
+            arrayValue = document.getElementById("txtl").value;
+            mainArray.push(arrayValue);
+
+            document.getElementById("arrayResult").innerHTML = mainArray;
+
+        }
+    </script>
+</head>
+<body>
+
+    <p>
+        <input type="text" id="txtl1"></input>
+    </p>
+
+    <p>
+        <button id="btn1" onclick="addToArray()">Add to Array</button>
+    </p>
+
+    <hr>
+
+    <p>
+        <span id="arrayResult"></span>
+    </p>
+    
+</body>
+</html>

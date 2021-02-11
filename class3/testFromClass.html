@@ -1,0 +1,22 @@
+<html>
+<h1>MPG Application</h1>
+<body>
+    <script>
+        "use strict";
+       const miles = parseInt(prompt("Enter miles driven"));
+
+       const gallons = parseInt(prompt("Enter gallons of gas used"));
+
+       const mpg = parseFloat(miles/gallons);
+
+       const html = `<p>Miles:${miles}</p> <p>Gallons: ${gallons}</p> <p>MPG:${mpg.toFixed(2)}</p>`;
+
+        document.write(html);
+
+    </script>
+
+
+
+
+</body>
+</html>
