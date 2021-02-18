@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--
+    be careful with typo "onclick"
+-->
+<html lang="en">
+    
+
+<head>
+    
+    <script>
+        function addNums() {
+            first = document.getElementById("in1").value;
+            second = document.getElementById("in2").value;
+
+
+            alert(first);
+
+            result = parseInt(first) + parseInt(second);
+
+            alert(result);
+
+            document.getElementById("result").innerHTML = result;
+        }
+
+
+
+        function clearVals() {
+            document.getElementById("result").innerHTML = '';
+            document.getElementById("in1").value = 0;
+            document.getElementById("in2").value = 0;
+        }
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>
+                Number 1
+            </th>
+            <th>
+                Number 2
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input id="in1"></input>
+            </td>
+            <td>
+                <input id="in2"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="addNums()">Add</button>
+            </td>
+            <td>
+                <button onclick="clearVals()">Clear</button>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <span id="result"></span>
+
+
+
+</body>
+
+</html>
